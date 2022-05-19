@@ -1,0 +1,179 @@
+:root {
+    --bg-color: #303041;
+    --color-2: #3d3a50;
+    --color-3: #0ea2f6;
+    --color-3: #117ebd;
+    --color-4: #f4fcfe;
+    --orange-btc: #f7931a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-4);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--color-2);
+    margin-bottom: clamp(10px, 2vw, 20px);
+    padding: 0 clamp(0px, 2vw*2vw, 100px);
+}
+
+#logo {
+    width: clamp(40px,8vw,60px);
+    height: auto;
+
+    margin: clamp(12px, 3vw, 20px);
+    margin-right: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li a{
+    margin: clamp(8px, 2vw, 20px);
+    text-decoration: none;
+    color: var(--color-4);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+#theme-button {
+    margin: clamp(15px, 4vw, 20px);
+    width: clamp(40px,8vw,60px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#add-coin-button {
+    font-size: 40px;
+
+    color: var(--color-4);
+    background-color: var(--color-3);
+    border: solid var(--color-3);
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+table {
+    padding: 10px;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+
+    font-size: clamp(1.3rem,2vw,1.8rem);
+}
+  
+thead th:nth-child(1) {
+    width: 15%;
+}
+
+thead th:nth-child(2) {
+    width: 25%;
+}
+
+thead th:nth-child(3) {
+    width: 30%;
+}
+
+thead th:nth-child(4) {
+    width: 30%;
+}
+
+th, td {
+    padding: clamp(12px, 3vw, 18px);
+    text-align: center;
+}
+
+td {
+    background-color: var(--color-2);
+}
+
+td:first-child {
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+
+td:last-child {
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.td-coin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.td-coin img{
+    width: 30px;
+    height: auto;
+}
+
+th {
+    font-weight: normal;
+}
+
+@media (min-width: 600px)
+{   
+    table {
+        padding: 0 15vw;
+    }
+
+    header {
+        padding: 0 15vw;
+    }
+
+    .td-coin {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .td-coin img{
+        margin-right: 10px;
+    }
+
+    thead th:nth-child(1) {
+        width: 20%;
+    }
+    
+    thead th:nth-child(3) {
+        width: 25%;
+    }
+}
+
+  
