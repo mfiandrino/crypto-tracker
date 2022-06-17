@@ -2,7 +2,6 @@
     --bg-color: #303041;
     --color-2: #3d3a50;
     --color-3: #0ea2f6;
-    --color-3: #117ebd;
     --color-4: #f4fcfe;
     --orange-btc: #f7931a;
 }
@@ -77,10 +76,6 @@ main {
     width: 50px;
     height: 50px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     padding-bottom: 5px;
     margin-top: 20px;
 }
@@ -145,6 +140,55 @@ td:last-child {
 th {
     font-weight: normal;
 }
+
+#pop-up-window {
+    border-radius: 10px;
+    width: 300px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1e4e;
+    padding: 20px;
+}
+
+#pop-up-window h2 {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#pop-up-window label {
+    font-size: 1.5rem;
+}
+
+.pop-up-window-field {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-up-window-field input,select {
+    width: 40%;
+}
+
+#new-coin-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#new-coin-buttons button {
+    padding: 10px 20px;
+    background-color:var(--color-3);
+    border: solid var(--color-4) 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--color-4);
+
+}
+
 
 @media (min-width: 600px)
 {   
