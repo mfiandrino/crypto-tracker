@@ -1,1 +1,1 @@
-# crypto-tracker
+# A cryptocurrency portfolio tracker (in process)
